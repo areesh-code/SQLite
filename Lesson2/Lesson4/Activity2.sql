@@ -17,3 +17,4 @@ SELECT D_ID, Sum (Salary) FROM Department GROUP BY D_ID;
 SELECT D_ID, Sum (Salary), Count(*) FROM Department GROUP BY D_ID;
 SELECT D_ID, Sum(Salary), Avg(Salary), Count(*) FROM Department GROUP BY D_ID;
 SELECT D_ID, Sum(Salary), Count(*) FROM Department GROUP BY D_ID ORDER BY Sum(Salary);
+SELECT D_ID, Sum(Salary), Count(*) FROM Department GROUP BY D_ID ORDER BY Count(*) DESC;
