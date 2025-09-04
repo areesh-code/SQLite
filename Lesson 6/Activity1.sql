@@ -32,5 +32,15 @@ JOIN Saleman1 S ON C.SID = S.SID;
 SELECT C.CNAME, C.CCITY, S.SNAME FROM Customers1 C
 JOIN Saleman1 S ON C.CCity = S.SCity;
 
+SELECT C.CNAME, S.SNAME FROM Customers1 C
+JOIN Saleman1 S ON C.SID = S.SID;
+
+SELECT C.CNAME, S.SNAME, S.SCOUNTRY FROM Customers1 C
+JOIN Saleman1 S ON C.SID = S.SID
+WHERE S.SCOUNTRY = 'NZ';
+
+SELECT Count(C.CID), Count(S.SID) FROM Customers1 C JOIN Saleman1 S ON C.SID = S.SID;
+
+
 
 
